@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ".character-description"
     );
 
-    function showCharacterDescription(characterId) {
+    function showCharacterDescription(characterId, shouldScroll = false) {
       characterDescriptions.forEach((desc) => {
         desc.classList.remove("active");
       });
@@ -102,17 +102,19 @@ document.addEventListener("DOMContentLoaded", function () {
       if (targetDescription) {
         targetDescription.classList.add("active");
 
-        targetDescription.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+        if (shouldScroll) {
+          targetDescription.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
       }
     }
 
     characterCards.forEach((card) => {
       card.addEventListener("click", function () {
         const characterId = this.getAttribute("data-character");
-        showCharacterDescription(characterId);
+        showCharacterDescription(characterId, true);
 
         characterCards.forEach((c) => c.classList.remove("active-card"));
         this.classList.add("active-card");
@@ -121,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (characterCards.length > 0 && characterDescriptions.length > 0) {
       const firstCharacterId = characterCards[0].getAttribute("data-character");
-      showCharacterDescription(firstCharacterId);
+      showCharacterDescription(firstCharacterId, false);
       characterCards[0].classList.add("active-card");
     }
   }
