@@ -1,0 +1,47 @@
+<div class="container">
+    <h1>Entre em Contato</h1>
+    <form class="contact-form" id="contactForm">
+        <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Assunto:</label>
+            <select id="subject" name="subject" required>
+                <option value="">Selecione um assunto</option>
+                <option value="suporte">Suporte Técnico</option>
+                <option value="feedback">Feedback do Jogo</option>
+                <option value="parceria">Proposta de Parceria</option>
+                <option value="outros">Outros</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter" class="checkbox-label">Desejo receber novidades por e-mail</label>
+        </div>
+        <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+    
+    <div class="contact-info">
+        <h2>Informações de Contato</h2>
+        <p><strong>Email:</strong> contato@jogorei.com.br</p>
+        <p><strong>Telefone:</strong> (11) 1234-5678</p>
+        <p><strong>Endereço:</strong> Av. dos Games, 123 - São Paulo, SP</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Formulário enviado com sucesso! Em breve entraremos em contato.');
+        this.reset();
+    });
+</script>
