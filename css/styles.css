@@ -397,3 +397,119 @@ footer {
   #home {
     display: block;
   }
+
+  .character-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    gap: 20px;
+    height: 400px;
+}
+
+.character-card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.character-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.character-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.character-card h3 {
+    color: #333;
+    margin: 15px 0 5px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.character-card p {
+    color: #666;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Estilos para as descrições dos personagens */
+.character-descriptions {
+    margin-top: 60px;
+}
+
+.character-description {
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente oculto */
+}
+
+.character-description.active {
+    display: block; /* Mostrado quando ativo */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.character-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.character-info img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.character-text h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 32px;
+    border-bottom: 3px solid #ffcc00;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.character-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.character-text h3 {
+    margin: 20px 0 15px;
+    color: #444;
+    font-size: 24px;
+}
+
+.character-text ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.character-text li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-size: 16px;
+}

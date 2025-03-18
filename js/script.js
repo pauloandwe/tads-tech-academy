@@ -85,3 +85,56 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  function setupCharacterCards() {
+    const characterCards = document.querySelectorAll(".character-card");
+    const characterDescriptions = document.querySelectorAll(
+      ".character-description"
+    );
+
+    function showCharacterDescription(characterId) {
+      characterDescriptions.forEach((desc) => {
+        desc.classList.remove("active");
+      });
+
+      const targetDescription = document.getElementById(characterId);
+      if (targetDescription) {
+        targetDescription.classList.add("active");
+
+        targetDescription.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+
+    characterCards.forEach((card) => {
+      card.addEventListener("click", function () {
+        const characterId = this.getAttribute("data-character");
+        showCharacterDescription(characterId);
+
+        characterCards.forEach((c) => c.classList.remove("active-card"));
+        this.classList.add("active-card");
+      });
+    });
+
+    if (characterCards.length > 0 && characterDescriptions.length > 0) {
+      const firstCharacterId = characterCards[0].getAttribute("data-character");
+      showCharacterDescription(firstCharacterId);
+      characterCards[0].classList.add("active-card");
+    }
+  }
+
+  const aboutSection = document.getElementById("about");
+  if (aboutSection) {
+    setupCharacterCards();
+  }
+
+  const aboutLink = document.querySelector('a[data-section="about"]');
+  if (aboutLink) {
+    aboutLink.addEventListener("click", function () {
+      setTimeout(setupCharacterCards, 100);
+    });
+  }
+});
