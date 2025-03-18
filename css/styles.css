@@ -31,7 +31,7 @@ header .container {
 
 }
 
-.logo-box{
+.logo-box {
     display: flex;
     padding: 5px;
     height: 60px;
@@ -46,7 +46,7 @@ header .container {
     padding: 0;
 }
 
-.col{
+.col {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,9 +80,88 @@ header .container {
     color: rgb(214, 214, 214);
 }
 
+.banner {
+    background: url("../img/background.jpg") no-repeat top center;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+
+    iframe {
+        width: 100%;
+        height: 240px;
+        margin: 250px auto;
+        border-radius: 5px;
+    }
+}
+
 .content-container {
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
+
+.content-container iframe {
+    max-width: 100%;
+    width: 800px;
+    height: 450px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    font: 26px "Lilita One", Roboto;
+    line-height: 1.3;
+
+
+}
+
+.about-midle {
+    margin-top: 30px;
+    display: flex;
+
+}
+
+.about-midle .about-title-box{
+    padding: 50px;
+    gap: 30px;  
+
+}
+
+.about-title-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-h2 {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+}
+
+.about-btn {
+    padding: 10px 20px 10px 20px;
+    background-color: red;
+    color: white;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+
 
 h1 {
     margin-bottom: 20px;
@@ -90,7 +169,8 @@ h1 {
 }
 
 p {
-    margin-bottom: 15px;
+    color: #333;
+    font-size: x-large;
 }
 
 footer {
@@ -98,7 +178,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
