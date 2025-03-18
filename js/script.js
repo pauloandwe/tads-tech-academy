@@ -1,18 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Navigation and section display functionality
   const sections = document.querySelectorAll(".content-section");
   const navLinks = document.querySelectorAll(".navbar a");
   const menuToggle = document.getElementById("menuToggle");
   const navMenu = document.getElementById("navMenu");
 
-  // Mobile menu toggle
   if (menuToggle && navMenu) {
     menuToggle.addEventListener("click", function () {
       navMenu.classList.toggle("active");
     });
   }
 
-  // Handle closing the mobile menu when a link is clicked
   navLinks.forEach((link) => {
     link.addEventListener("click", function () {
       if (navMenu.classList.contains("active")) {
@@ -51,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Set initial section based on URL hash
   let initialSection = "home";
   const hash = window.location.hash.replace("#", "");
   if (hash) {
@@ -67,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
     initialLink.classList.add("active");
   }
 
-  // Handle browser back/forward navigation
   window.addEventListener("popstate", function () {
     const hash = window.location.hash.replace("#", "");
     const sectionToShow = hash || "home";
@@ -82,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Game play functionality
   const playNowBtn = document.getElementById("playNowBtn");
   const closeGameBtn = document.getElementById("closeGameBtn");
   const gameFrame = document.getElementById("gameFrame");
@@ -98,17 +92,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Contact form submission
   const contactForm = document.getElementById("contactForm");
-  if (contactForm) {
+  
+      console.log('contactForm',contactForm);
+      if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
+      
+
       alert("Formulário enviado com sucesso! Em breve entraremos em contato.");
       this.reset();
     });
   }
 
-  // Character cards functionality
   function setupCharacterCards() {
     const characterCards = document.querySelectorAll(".character-card");
     const characterDescriptions = document.querySelectorAll(
@@ -150,13 +146,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Initialize character cards if we're in the about section
   const aboutSection = document.getElementById("about");
   if (aboutSection) {
     setupCharacterCards();
   }
 
-  // Ensure character cards are set up when navigating to about section
   const aboutLink = document.querySelector('a[data-section="about"]');
   if (aboutLink) {
     aboutLink.addEventListener("click", function () {
