@@ -18,28 +18,28 @@
                 <ul>
                     <li>
                         <div class="col">
-                            <a href="#" data-page="pages/home.html">Home</a>
+                            <a href="#" data-section="home">Home</a>
                         </div>
                     </li>
                     <li>
                         <div class="col">
-                            <a href="#" data-page="pages/about.html">Sobre</a>
+                            <a href="#" data-section="about">Sobre</a>
                         </div>
                     </li>
 
                     <li>
                         <div class="col">
-                            <a href="#" data-page="pages/gallery.html">Galeria de Fotos</a>
+                            <a href="#" data-section="gallery">Galeria de Fotos</a>
                         </div>
                     </li>
                     <li>
                         <div class="col">
-                            <a href="#" data-page="pages/contact.html">Contato</a>
+                            <a href="#" data-section="contact">Contato</a>
                         </div>
                     </li>
                     <li>
                         <div class="col">
-                            <a class="btn-play" href="#" data-page="pages/play.html">Jogar</a>
+                            <a class="btn-play" href="#" data-section="play">Jogar</a>
                         </div>
                     </li>
                 </ul>
@@ -48,7 +48,160 @@
     </header>
 
     <main class="page-content">
-        <div id="content-container"></div>
+        <section id="home" class="content-section">
+            <div class="banner">
+                <div class="container content-container">
+                    <iframe src="https://www.youtube.com/embed/ZkAZckQipZg"
+                        title="Trailer do Jogo a Treta dos Irmãos Piologo - Jogue na BGS 2015" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="container content-container">
+                <div class="about-container">
+                    <div class="about-title-box">
+                        <div class="about-h2">
+                            <h2>Sobre o Jogo do Rei</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellendus placeat impedit aut
+                            laborum? Eius commodi, minus sit, at error, mollitia perspiciatis porro atque dignissimos
+                            eos magnam a fugiat in!</p>
+                    </div>
+                    <div class="about-title-box">
+                        <a class="about-btn" href="#">Clique aqui</a>
+                    </div>
+                    <div class="about-midle">
+                        <img src="img/group-sprites.png" alt="Sprites">
+                        <div class="about-title-box">
+                            <div class="about-h2">
+                                <h2>Sobre o Jogo do Rei</h2>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellendus placeat impedit
+                                    aut laborum? Eius commodi, minus sit, at error, mollitia perspiciatis porro atque
+                                    dignissimos eos magnam a fugiat in!</p>
+                            </div>
+                            <div class="about-title-box">
+                                <a class="about-btn" href="#">Clique aqui</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="container content-container">
+          
+            </div>
+        </section>
+
+        <section id="gallery" class="content-section">
+            <div class="container">
+                <h1>Galeria de Fotos</h1>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="img/placeholder1.jpg" alt="Imagem 1">
+                        <div class="image-caption">Captura de tela do jogo 1</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/placeholder2.jpg" alt="Imagem 2">
+                        <div class="image-caption">Captura de tela do jogo 2</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/placeholder3.jpg" alt="Imagem 3">
+                        <div class="image-caption">Captura de tela do jogo 3</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/placeholder4.jpg" alt="Imagem 4">
+                        <div class="image-caption">Captura de tela do jogo 4</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/placeholder5.jpg" alt="Imagem 5">
+                        <div class="image-caption">Captura de tela do jogo 5</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/placeholder6.jpg" alt="Imagem 6">
+                        <div class="image-caption">Captura de tela do jogo 6</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="container">
+                <h1>Entre em Contato</h1>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="suporte">Suporte Técnico</option>
+                            <option value="feedback">Feedback do Jogo</option>
+                            <option value="parceria">Proposta de Parceria</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter" class="checkbox-label">Desejo receber novidades por e-mail</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
+                
+                <div class="contact-info">
+                    <h2>Informações de Contato</h2>
+                    <p><strong>Email:</strong> contato@jogorei.com.br</p>
+                    <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                    <p><strong>Endereço:</strong> Av. dos Games, 123 - São Paulo, SP</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="play" class="content-section">
+            <div class="container game-container">
+                <h1>Jogar Agora</h1>
+                <div class="game-info">
+                    <h2>Instruções</h2>
+                    <p>Bem-vindo ao Jogo do Rei! Para jogar, siga as instruções abaixo:</p>
+                    <ul>
+                        <li>Use as setas para mover o personagem</li>
+                        <li>Pressione ESPAÇO para pular</li>
+                        <li>Pressione Z para atacar</li>
+                        <li>Colete todas as moedas para avançar para o próximo nível</li>
+                    </ul>
+                </div>
+                <div class="game-preview">
+                    <img src="img/game-preview.jpg" alt="Preview do Jogo">
+                </div>
+                <div class="game-buttons">
+                    <a href="#" class="game-btn" id="playNowBtn">Jogar Agora</a>
+                    <a href="#" class="game-btn">Instruções Detalhadas</a>
+                </div>
+                <div class="game-frame" id="gameFrame" style="display: none;">
+                    <div class="game-canvas">
+                        <div class="game-placeholder">Aqui será carregado o jogo</div>
+                    </div>
+                    <div class="game-controls">
+                        <button class="close-game-btn" id="closeGameBtn">Fechar Jogo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>

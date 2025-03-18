@@ -69,7 +69,6 @@ header .container {
 
 .navbar a.active {
     color: #ffcc00;
-    text-decoration: underline;
 }
 
 .navbar .btn-play {
@@ -389,3 +388,12 @@ footer {
     padding: 15px;
     margin-top: 30px;
 }
+
+
+.content-section {
+    display: none;
+  }
+  
+  #home {
+    display: block;
+  }
