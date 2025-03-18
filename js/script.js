@@ -93,12 +93,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const contactForm = document.getElementById("contactForm");
-  
-      console.log('contactForm',contactForm);
-      if (contactForm) {
+
+  if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      
+
+      const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+        newsletter: document.getElementById("newsletter").checked
+      };
+
+      console.log('Form Data:', formData);
 
       alert("Formulário enviado com sucesso! Em breve entraremos em contato.");
       this.reset();
