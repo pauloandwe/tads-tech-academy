@@ -32,14 +32,12 @@ header {
     align-items: center;
 }
 
-.logo-box {
+.navbar .logo-box {
+    cursor: pointer;
     display: flex;
     padding: 5px;
     height: 60px;
     justify-content: center;
-}
-.navbar .logo-box {
-    cursor: pointer;
 }
 
 .menu-toggle {
@@ -555,7 +553,6 @@ footer .container {
 footer .logo-box {
     display: flex;
     padding: 5px;
-    height: 80px;
     justify-content: center;
 }
 
@@ -669,9 +666,6 @@ p {
         padding: 5px;
     }
     
-    .logo-box {
-        height: 50px;
-    }
     
     .banner iframe {
         height: 180px;

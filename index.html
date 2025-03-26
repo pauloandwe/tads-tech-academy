@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <nav class="navbar">
-                <div class="logo-box">
+                <div class="logo-box" onclick="window.location.href='#'">
                     <img src="img/logo.png" alt="Logo">
                 </div>
                 <div class="menu-toggle" id="menuToggle">
@@ -66,13 +66,13 @@
                 <div class="about-container">
                     <div class="about-title-box">
                         <div class="about-h2">
-                            <h2>Sobre o Jogo do Rei</h2>
+                            <h2>Bem-vindo a Sombras do Labirinto</h2>
                         </div>
                     </div>
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellendus placeat impedit aut
-                            laborum? Eius commodi, minus sit, at error, mollitia perspiciatis porro atque dignissimos
-                            eos magnam a fugiat in!</p>
+                        <p>
+                            Mergulhe em um labirinto escuro e perigoso, onde sua única chance de escapar é encontrar a chave escondida e alcançar a porta da salvação. Mas cuidado: zumbis vagam pelas sombras e armadilhas mortais espreitam a cada passo. Sua visão é limitada. Sua coragem, testada. Está pronto para sobreviver às Sombras do Labirinto?
+                            </p>
                     </div>
                     <div class="about-title-box">
                         <a class="about-btn" href="#">Clique aqui</a>
@@ -108,43 +108,40 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
 
-            <p>A Treta dos Irmãos Piologo é um jogo de ação/plataforma onde o personagem principal é Rodrigo Piologo, que teve seus preciosos consoles roubados pelo seu irmão, Ricardo Piologo. Ricardo levou os consoles de Rodrigo para dentro de um mundo virtual cheio de referências à jogos clássicos e todo o universo que os irmãos criaram nesses últimos vinte anos. Cabe agora à Rodrigo embarcar nessa grande aventura, enfrentar os mais diversos inimigos, derrotar bosses, coletar tesouros e chegar ao desafio final, seu irmão. E claro, para essa jornada nada mais justo do que a ajuda de seu fiel escudeiro, Pastor Metralhadora.
-
-                 Com armas mirabolantes, jogabilidade fácil, humor ao nível extremo e inúmeras referências, A Treta dos Irmãos Piologo foi feito para agradar tanto os jogadores nostálgicos quanto os jogadores desta nova geração.</p>
+                <p>
+                "Sombras do Labirinto" é um jogo de aventura e sobrevivência que coloca você em um ambiente misterioso e sombrio. O objetivo é simples: encontre a chave, alcance a porta e fuja com vida. Mas o caminho está repleto de perigos: zumbis implacáveis, armadilhas ocultas e uma visão limitada que aumenta a tensão a cada passo.
+                </p>
+                <p>
+                Com jogabilidade desafiadora, atmosfera imersiva e gráficos pixelados retrô, o jogo oferece uma experiência intensa e viciante, perfeita para quem gosta de ação e suspense.
+                </p>
+                
                 <h1>Conheça os Personagens</h1>
                 
                 <div class="character-cards">
                     <div class="character-card" data-character="character1">
-                        <img src="img/player.gif" alt="Personagem 1">
-                        <h3>Atirador de Elite</h3>
+                        <img src="img/people.png" alt="Personagem 1">
+                        <h3>Sobrevivente</h3>
                         <p>Clique para conhecer mais</p>
                     </div>
                     
                     <div class="character-card" data-character="character2">
-                        <img src="img/zumbi.gif" alt="Zumbi">
-                        <h3>Zumbi</h3>
+                        <img src="img/zumbi.png" alt="Zumbi">
+                        <h3>Zumbis</h3>
                         <p>Clique para conhecer mais</p>
                     </div>
-                    
-                    <div class="character-card" data-character="character3">
-                        <img src="img/dog.gif" alt="Dog">
-                        <h3>Dog</h3>
-                        <p>Clique para conhecer mais</p>
-                    </div>
-                </div>
+          
                 
                 <div class="character-descriptions">
                     <div id="character1" class="character-description">
                         <div class="character-info">
-                            <img src="img/player.gif" alt="Personagem 1 - Imagem completa">
+                            <img src="img/people.png" alt="Personagem 1 - Imagem completa">
                             <div class="character-text">
-                                <h2>Atirador de Elite</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                                <h2>Sobrevivente</h2>
+                                <p>Você é o protagonista. Um explorador perdido no labirinto sombrio, armado apenas com sua inteligência, reflexos rápidos e coragem.</p>
                                 <h3>Habilidades</h3>
                                 <ul>
-                                    <li><strong>Habilidade 1:</strong> Descrição da habilidade</li>
-                                    <li><strong>Habilidade 2:</strong> Descrição da habilidade</li>
-                                    <li><strong>Habilidade 3:</strong> Descrição da habilidade</li>
+                                    <li><strong>Habilidade 1:</strong> Lanterna</li>
+                                    <li><strong>Habilidade 2:</strong> Pulos autos</li>
                                 </ul>
                             </div>
                         </div>
@@ -152,31 +149,14 @@
                     
                     <div id="character2" class="character-description">
                         <div class="character-info">
-                            <img src="img/zumbi.gif" alt="Zumbi - Imagem completa">
+                            <img src="img/zumbi.png" alt="Zumbi - Imagem completa">
                             <div class="character-text">
-                                <h2>Zumbi</h2>
-                                <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur aliquet quam id dui posuere blandit.</p>
+                                <h2>Zumbis</h2>
+                                <p>Criaturas sombrias que vagam pelo labirinto. Eles seguem o som e a luz. Evite ser visto ou será caçado sem piedade.</p>
                                 <h3>Habilidades</h3>
                                 <ul>
-                                    <li><strong>Habilidade 1:</strong> Descrição da habilidade</li>
-                                    <li><strong>Habilidade 2:</strong> Descrição da habilidade</li>
-                                    <li><strong>Habilidade 3:</strong> Descrição da habilidade</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="character3" class="character-description">
-                        <div class="character-info">
-                            <img src="img/dog.gif" alt="Dog - Imagem completa">
-                            <div class="character-text">
-                                <h2>Dog</h2>
-                                <p>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
-                                <h3>Habilidades</h3>
-                                <ul>
-                                    <li><strong>Habilidade 1:</strong> Descrição da habilidade</li>
-                                    <li><strong>Habilidade 2:</strong> Descrição da habilidade</li>
-                                    <li><strong>Habilidade 3:</strong> Descrição da habilidade</li>
+                                    <li><strong>Habilidade 1:</strong> Mordida mortal</li>
+                                    <li><strong>Habilidade 2:</strong> Seguir movimento dos sobreviventes</li>
                                 </ul>
                             </div>
                         </div>
@@ -294,13 +274,13 @@
     <footer>
         <div class="container">
             <div class="logo-box">
-                <img src="img/logo.png" alt="Logo">
+                <img width="200px" src="img/logo.png" alt="Logo">
             </div>
             <p class="redes">
                 <a href="#" title="Facebook">
                     <i class="fab fa-facebook"></i>
                 </a>
-                <a href="#" title="Instagram">
+                <a href="https://www.instagram.com/pauloand_e/" title="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
                 <a href="#" title="Youtube">
@@ -308,7 +288,7 @@
                 </a>
             </p>
             <p>
-                Desenvolvido por Wandiscleyah Miranda Dyéquisson
+                Desenvolvido por Paulo André Cardeal
             </p>
         </div>
     </footer>
