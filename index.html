@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Página Simples com Nav Bar</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -56,44 +57,46 @@
         <section id="home" class="content-section">
             <div class="banner">
                 <div class="container content-container">
-                    <iframe src="https://www.youtube.com/embed/ZkAZckQipZg"
-                        title="Trailer do Jogo a Treta dos Irmãos Piologo - Jogue na BGS 2015" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                    <div class="first-image">
+
+                    </div>
                 </div>
             </div>
             <div class="container">
-                <div class="about-container">
+                <div data-aos="zoom-in" class="about-container">
                     <div class="about-title-box">
                         <div class="about-h2">
-                            <h2>Bem-vindo a Sombras do Labirinto</h2>
+                            <h2>Bem-vindo a Maze Shadows</h2>
                         </div>
                     </div>
                     <div>
                         <p>
-                            Mergulhe em um labirinto escuro e perigoso, onde sua única chance de escapar é encontrar a chave escondida e alcançar a porta da salvação. Mas cuidado: zumbis vagam pelas sombras e armadilhas mortais espreitam a cada passo. Sua visão é limitada. Sua coragem, testada. Está pronto para sobreviver às Sombras do Labirinto?
-                            </p>
-                    </div>
-                    <div class="about-title-box">
-                        <a class="about-btn" href="#">Clique aqui</a>
+                            Mergulhe em um labirinto escuro e perigoso, onde sua única chance de escapar é encontrar a
+                            chave escondida e alcançar a porta da salvação. Mas cuidado: zumbis vagam pelas sombras e
+                            armadilhas mortais espreitam a cada passo. Sua visão é limitada. Sua coragem, testada. Está
+                            pronto para sobreviver às Maze Shadows?
+                        </p>
                     </div>
                     <div class="about-midle">
-                        <img src="img/group-sprites.png" alt="Sprites">
-                            <div class="about-container">
-                                <div class="about-title-box">
-                                    <div class="about-h2">
-                                        <h2>Sobre o Jogo do Rei</h2>
-                                    </div>
+                        <img data-aos="zoom-out-right" src="img/midle.png" alt="Sprites">
+                        <div data-aos="zoom-out-left" class="about-container">
+                            <div class="about-title-box">
+                                <div class="about-h2">
+                                    <h2>Sobre o Jogo</h2>
                                 </div>
-                                    <div>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellendus placeat impedit
-                                            aut laborum? Eius commodi, minus sit, at error, mollitia perspiciatis porro atque
-                                            dignissimos eos magnam a fugiat in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique earum incidunt unde! Sint impedit aut itaque velit tenetur debitis nulla ex. Vero consequatur quo quidem consectetur est eos exercitationem corrupti.</p>
-                                    </div>
-                                    <div class="about-title-box">
-                                        <a class="about-btn" href="#about">Clique aqui</a>
-                                    </div>
-                           </div>
+                            </div>
+                            <div>
+                                <p>
+                                    Maze Shadows é um jogo de aventura e sobrevivência que coloca você em um
+                                    ambiente misterioso e sombrio. O objetivo é simples: encontre a chave, alcance a
+                                    porta e fuja com vida. Mas o caminho está repleto de perigos: zumbis implacáveis,
+                                    armadilhas ocultas e uma visão limitada que aumenta a tensão a cada passo.
+                                </p>
+
+                            </div>
+                            <div class="about-title-box">
+                                <a class="about-btn" href="#about">Clique aqui</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,66 +106,68 @@
         <section id="about" class="content-section">
             <div class="container">
                 <h1>Sobre o Jogo</h1>
-                <iframe src="https://www.youtube.com/embed/ZkAZckQipZg"
-                title="Trailer do Jogo a Treta dos Irmãos Piologo - Jogue na BGS 2015" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
 
                 <p>
-                "Sombras do Labirinto" é um jogo de aventura e sobrevivência que coloca você em um ambiente misterioso e sombrio. O objetivo é simples: encontre a chave, alcance a porta e fuja com vida. Mas o caminho está repleto de perigos: zumbis implacáveis, armadilhas ocultas e uma visão limitada que aumenta a tensão a cada passo.
+                    Maze Shadows é um jogo de aventura e sobrevivência que coloca você em um ambiente misterioso
+                    e sombrio. O objetivo é simples: encontre a chave, alcance a porta e fuja com vida. Mas o caminho
+                    está repleto de perigos: zumbis implacáveis, armadilhas ocultas e uma visão limitada que aumenta a
+                    tensão a cada passo.
                 </p>
                 <p>
-                Com jogabilidade desafiadora, atmosfera imersiva e gráficos pixelados retrô, o jogo oferece uma experiência intensa e viciante, perfeita para quem gosta de ação e suspense.
+                    Com jogabilidade desafiadora, atmosfera imersiva e gráficos pixelados retrô, o jogo oferece uma
+                    experiência intensa e viciante, perfeita para quem gosta de ação e suspense.
                 </p>
-                
+
                 <h1>Conheça os Personagens</h1>
-                
-                <div class="character-cards">
+
+                <div data-aos="fade-up" class="character-cards">
                     <div class="character-card" data-character="character1">
                         <img src="img/people.png" alt="Personagem 1">
                         <h3>Sobrevivente</h3>
                         <p>Clique para conhecer mais</p>
                     </div>
-                    
+
                     <div class="character-card" data-character="character2">
                         <img src="img/zumbi.png" alt="Zumbi">
                         <h3>Zumbis</h3>
                         <p>Clique para conhecer mais</p>
                     </div>
-          
-                
-                <div class="character-descriptions">
-                    <div id="character1" class="character-description">
-                        <div class="character-info">
-                            <img src="img/people.png" alt="Personagem 1 - Imagem completa">
-                            <div class="character-text">
-                                <h2>Sobrevivente</h2>
-                                <p>Você é o protagonista. Um explorador perdido no labirinto sombrio, armado apenas com sua inteligência, reflexos rápidos e coragem.</p>
-                                <h3>Habilidades</h3>
-                                <ul>
-                                    <li><strong>Habilidade 1:</strong> Lanterna</li>
-                                    <li><strong>Habilidade 2:</strong> Pulos autos</li>
-                                </ul>
+
+
+                    <div class="character-descriptions">
+                        <div id="character1" class="character-description">
+                            <div class="character-info">
+                                <img src="img/people.png" alt="Personagem 1 - Imagem completa">
+                                <div class="character-text">
+                                    <h2>Sobrevivente</h2>
+                                    <p>Você é o protagonista. Um explorador perdido no labirinto sombrio, armado apenas
+                                        com sua inteligência, reflexos rápidos e coragem.</p>
+                                    <h3>Habilidades</h3>
+                                    <ul>
+                                        <li><strong>Habilidade 1:</strong> Lanterna</li>
+                                        <li><strong>Habilidade 2:</strong> Pulos autos</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div id="character2" class="character-description">
-                        <div class="character-info">
-                            <img src="img/zumbi.png" alt="Zumbi - Imagem completa">
-                            <div class="character-text">
-                                <h2>Zumbis</h2>
-                                <p>Criaturas sombrias que vagam pelo labirinto. Eles seguem o som e a luz. Evite ser visto ou será caçado sem piedade.</p>
-                                <h3>Habilidades</h3>
-                                <ul>
-                                    <li><strong>Habilidade 1:</strong> Mordida mortal</li>
-                                    <li><strong>Habilidade 2:</strong> Seguir movimento dos sobreviventes</li>
-                                </ul>
+
+                        <div id="character2" class="character-description">
+                            <div class="character-info">
+                                <img src="img/zumbi.png" alt="Zumbi - Imagem completa">
+                                <div class="character-text">
+                                    <h2>Zumbis</h2>
+                                    <p>Criaturas sombrias que vagam pelo labirinto. Eles seguem o som e a luz. Evite ser
+                                        visto ou será caçado sem piedade.</p>
+                                    <h3>Habilidades</h3>
+                                    <ul>
+                                        <li><strong>Habilidade 1:</strong> Mordida mortal</li>
+                                        <li><strong>Habilidade 2:</strong> Seguir movimento dos sobreviventes</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <section id="gallery" class="content-section">
@@ -170,28 +175,28 @@
                 <h1>Galeria de Fotos</h1>
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="img/placeholder1.jpg" alt="Imagem 1">
+                        <img src="img/pic1.png" alt="Imagem 1">
                         <div class="image-caption">Captura de tela do jogo 1</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="img/placeholder2.jpg" alt="Imagem 2">
+                        <img src="img/pic2.png" alt="Imagem 2">
                         <div class="image-caption">Captura de tela do jogo 2</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="img/placeholder3.jpg" alt="Imagem 3">
+                        <img src="img/pic3.png" alt="Imagem 3">
                         <div class="image-caption">Captura de tela do jogo 3</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="img/placeholder4.jpg" alt="Imagem 4">
-                        <div class="image-caption">Captura de tela do jogo 4</div>
+                        <img src="img/pic4.png" alt="Imagem 1">
+                        <div class="image-caption">Captura de tela do jogo 1</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="img/placeholder5.jpg" alt="Imagem 5">
-                        <div class="image-caption">Captura de tela do jogo 5</div>
+                        <img src="img/pic5.png" alt="Imagem 2">
+                        <div class="image-caption">Play</div>
                     </div>
                     <div class="gallery-item">
-                        <img src="img/placeholder6.jpg" alt="Imagem 6">
-                        <div class="image-caption">Captura de tela do jogo 6</div>
+                        <img src="img/pic6.png" alt="Imagem 3">
+                        <div class="image-caption">Game Over</div>
                     </div>
                 </div>
             </div>
@@ -229,7 +234,7 @@
                     </div>
                     <button type="submit" class="submit-btn">Enviar</button>
                 </form>
-                
+
                 <div class="contact-info">
                     <h2>Informações de Contato</h2>
                     <p><strong>Email:</strong> contato@jogorei.com.br</p>
@@ -242,30 +247,24 @@
         <section id="play" class="content-section">
             <div class="container game-container">
                 <h1>Jogar Agora</h1>
+
+                <div class="game-wrapper">
+                    <iframe width="1000px" height="600px" src="game/" allowfullscreen></iframe>
+                </div>
+                
+                <div class="compatibility-message">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h2>Este jogo não está disponível para dispositivos móveis</h2>
+                    <p>Para a melhor experiência de jogo, acesse através de um computador ou notebook.</p>
+                    <p>O Maze Shadows requer teclado e um display maior para jogabilidade ideal.</p>
+                </div>
                 <div class="game-info">
                     <h2>Instruções</h2>
-                    <p>Bem-vindo ao Sombras do Labirinto! Para jogar, siga as instruções abaixo:</p>
+                    <p>Bem-vindo ao Maze Shadows! Para jogar, siga as instruções abaixo:</p>
                     <ul>
-                        <li>Use as setas para mover o personagem</li>
-                        <li>Pressione ESPAÇO para pular</li>
-                        <li>Pressione Z para atacar</li>
-                        <li>Colete todas as moedas para avançar para o próximo nível</li>
+                        <li>Use as setas laterais para mover o personagem</li>
+                        <li>Use a sete para cima para pular</li>
                     </ul>
-                </div>
-                <div class="game-preview">
-                    <img src="img/game-preview.jpg" alt="Preview do Jogo">
-                </div>
-                <div class="game-buttons">
-                    <a href="#" class="game-btn" id="playNowBtn">Jogar Agora</a>
-                    <a href="#" class="game-btn">Instruções Detalhadas</a>
-                </div>
-                <div class="game-frame" id="gameFrame" style="display: none;">
-                    <div class="game-canvas">
-                        <div class="game-placeholder">Aqui será carregado o jogo</div>
-                    </div>
-                    <div class="game-controls">
-                        <button class="close-game-btn" id="closeGameBtn">Fechar Jogo</button>
-                    </div>
                 </div>
             </div>
         </section>
@@ -292,7 +291,7 @@
             </p>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 

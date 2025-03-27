@@ -122,23 +122,23 @@ header {
 }
 
 .banner {
-    background: url("../img/background.jpg") no-repeat top center;
+    background: url("../img/wallpaper.webp") no-repeat top center;
     width: 100%;
-    height: auto;
-    min-height: 600px;
+    height: 20vh;
+    min-height: 700px;
     background-size: cover;
     position: relative;
     padding: 20px 0;
 }
 
-.banner iframe {
+
+
+.first-image {
+    display: flex;
     width: 100%;
-    max-width: 800px;
-    height: 450px;
-    margin: 60px auto;
-    margin-top: 200px;
-    border-radius: 5px;
-    display: block;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .about-container {
@@ -628,10 +628,6 @@ p {
         min-height: 300px;
     }
     
-    .banner iframe {
-        margin: 40px auto;
-        height: 200px;
-    }
     
     .about-midle {
         flex-direction: column;
@@ -691,5 +687,56 @@ p {
     
     .about-h2 h2 {
         font-size: 18px;
+    }
+}
+
+/* Estilo para o wrapper do jogo */
+.game-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Mensagem de compatibilidade (escondida por padrão) */
+.compatibility-message {
+    display: none;
+    padding: 30px 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.compatibility-message i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.compatibility-message h2 {
+    margin-bottom: 15px;
+}
+
+.compatibility-message p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+@media (max-width: 1146px) {
+    .game-wrapper {
+        display: none;
+    }
+    
+    .compatibility-message {
+        display: block;
+    }
+    
+    .game-info {
+        display: none;
     }
 }

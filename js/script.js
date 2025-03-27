@@ -1,3 +1,4 @@
+AOS.init();
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll(".content-section");
   const navLinks = document.querySelectorAll(".navbar a");
@@ -77,20 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const playNowBtn = document.getElementById("playNowBtn");
-  const closeGameBtn = document.getElementById("closeGameBtn");
-  const gameFrame = document.getElementById("gameFrame");
-
-  if (playNowBtn && closeGameBtn && gameFrame) {
-    playNowBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      gameFrame.style.display = "block";
-    });
-
-    closeGameBtn.addEventListener("click", function () {
-      gameFrame.style.display = "none";
-    });
-  }
 
   const contactForm = document.getElementById("contactForm");
 
