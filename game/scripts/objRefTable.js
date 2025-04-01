@@ -11,21 +11,22 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Mouse,
 		C3.Plugins.TextBox,
 		C3.Plugins.Button,
+		C3.Plugins.Text,
+		C3.Plugins.Audio,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Sprite.Acts.SetPosToObject,
 		C3.Behaviors.Pin.Acts.PinByProperties,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
+		C3.Plugins.Audio.Acts.StopAll,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Behaviors.Platform.Cnds.IsMoving,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Behaviors.Platform.Cnds.OnLand,
 		C3.Behaviors.Platform.Cnds.OnStop,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown,
 		C3.Plugins.Sprite.Acts.SetMirrored,
-		C3.Plugins.System.Cnds.ForEach,
-		C3.Plugins.Sprite.Cnds.CompareX,
-		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Behaviors.solid.Acts.SetEnabled,
 		C3.Plugins.Sprite.Acts.Destroy,
@@ -33,7 +34,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.System.Acts.SetBoolVar,
-		C3.Plugins.Button.Cnds.OnClicked
+		C3.Plugins.System.Cnds.ForEach,
+		C3.Plugins.Sprite.Cnds.CompareX,
+		C3.Behaviors.Platform.Acts.SimulateControl,
+		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked
 	];
 };
 self.C3_JsPropNameTable = [
@@ -62,6 +67,12 @@ self.C3_JsPropNameTable = [
 	{Sprite12: 0},
 	{Botão: 0},
 	{Botão2: 0},
+	{Sprite5: 0},
+	{cenariotexturizadodetelatextiltecida_: 0},
+	{Texto: 0},
+	{FonteDeSprites5: 0},
+	{Sprite13: 0},
+	{Áudio: 0},
 	{hasKey: 0}
 ];
 
@@ -87,5 +98,11 @@ self.InstanceType = {
 	EntradaDeTexto: class extends self.ITextInputInstance {},
 	Sprite12: class extends self.ISpriteInstance {},
 	Botão: class extends self.IButtonInstance {},
-	Botão2: class extends self.IButtonInstance {}
+	Botão2: class extends self.IButtonInstance {},
+	Sprite5: class extends self.ISpriteInstance {},
+	cenariotexturizadodetelatextiltecida_: class extends self.ISpriteInstance {},
+	Texto: class extends self.ITextInstance {},
+	FonteDeSprites5: class extends self.ISpriteFontInstance {},
+	Sprite13: class extends self.ISpriteInstance {},
+	Áudio: class extends self.IInstance {}
 }
